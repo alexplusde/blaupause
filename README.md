@@ -1,4 +1,4 @@
-# Dummy - REPO kopieren, anpassen, AddOn-Entwicklung starten
+# Dummy - Dieses Repository kopieren, anpassen, AddOn-Entwicklung für REDAXO starten
 
 Ein REDAXO-Dummy-Addon für einen schnelleren Start bei der Addon-Entwicklung. 
 
