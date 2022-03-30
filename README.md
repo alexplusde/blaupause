@@ -2,7 +2,7 @@
 
 Ein REDAXO-Dummy-Addon für einen schnelleren Start bei der Addon-Entwicklung. 
 
-1. https://github.com/alexplusde/dummy/archive/refs/heads/main.zip ZIP der aktuellen Vorlage herunterladen oder direkt in GitHub ein Repo auf Basis von `alexplusde/dummy` erstellen: https://github.com/new/import
+1. https://github.com/alexplusde/dummy/archive/refs/heads/main.zip ZIP der aktuellen Vorlage herunterladen oder direkt in GitHub ein Repo auf Basis von `alexplusde/dummy` erstellen: https://github.com/new/import und dort `https://github.com/alexplusde/dummy.git` angeben.
 2. Mit "Suchen und Ersetzen" alles, was `dummy` heißt, durch den Namen deines Addons ersetzen, z.B. `supi-dupi-kalender`, und speichern. Sowohl Dateinamen, als auch Dateiinhalte. 
 3. Alles löschen, was du aktuell nicht brauchst (oder für später auskommentiert lassen)
 
