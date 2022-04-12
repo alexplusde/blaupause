@@ -5,13 +5,13 @@ rex_yform_manager_table_api::importTablesets(rex_file::get(rex_path::addon($this
 
 rex_yform_manager_table::deleteCache();
 
-$modules = scandir(rex_path::addon("events")."module");
+$modules = scandir(rex_path::addon("dummy")."module");
 
 foreach ($modules as $module) {
     if ($module == "." || $module == "..") {
         continue;
     }
-    $module_array = json_decode(rex_file::get(rex_path::addon("events")."module/".$module), 1);
+    $module_array = json_decode(rex_file::get(rex_path::addon("dummy")."module/".$module), 1);
 
     rex_sql::factory()->setDebug(0)->setTable("rex_module")
     ->setValue("name", $module_array['name'])
@@ -19,7 +19,7 @@ foreach ($modules as $module) {
     ->setValue("input", $module_array['input'])
     ->setValue("output", $module_array['output'])
     ->setValue("createuser", "")
-    ->setValue("updateuser", "events")
+    ->setValue("updateuser", "dummy")
     ->setValue("createdate", date("Y-m-d H:i:s"))
     ->setValue("updatedate", date("Y-m-d H:i:s"))
     ->insertOrUpdate();

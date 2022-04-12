@@ -18,7 +18,7 @@ page:
     icon: rex-icon fa-gear
 
 pages:
-    dummypage: # key, unter dem die Seite zu finden sein wird. Passende Datei im Addon-Verzeichnis `pages/dummy.dummypage.php` muss vorhanden sein.
+    dummy: # key, unter dem die Seite zu finden sein wird. Passende Datei im Addon-Verzeichnis `pages/dummy.dummypage.php` muss vorhanden sein.
         title: translate:dummy_title
 #        main: true                 
         block: system               # 'system', um ins Hauptmenü zu verschieben, oder 'dummy', um eigenen Dummy-Abschnitt zu erstellen. Weglassen, um bei den Addons gelistet zu werden 
@@ -26,6 +26,11 @@ pages:
         icon: rex-icon fa-calendar  # Icon neben dem Menüpunkt
         perm: dummy[]               # Berechtigung, die einer Rolle zugewiesen werden kann. z.B. `admin` für Admin, oder `dummy['xyz']` für dein eigenes Addon
         subpages:                   # Automatisches Untermenü unterhalb des Reisters von `dummypage` erzeugen
+            table:
+                title: translate:dummy_settings
+                icon: rex-icon fa-gear
+                itemclass: pull-right
+                perm: admin
             settings:
                 title: translate:dummy_settings
                 icon: rex-icon fa-gear
