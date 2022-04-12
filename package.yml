@@ -5,12 +5,13 @@ supportpage: https://github.com/alexplusde/dummy # Support-Seite, wird im Instal
 # load: late 
 
 requires:                       # Abhängigkeiten definieren, z.B.
-#    php:
-#        version: '>7.3,<9'
-#    redaxo: ^5.13              # REDAXO Core-Version
-#    packages:                  # Plugins und Addons
-#        yform: "^4"
-
+    php:
+        version: '>7.3,<9'
+    redaxo: ^5.13              # REDAXO Core-Version
+    packages:                  # Plugins und Addons
+        yform: "^4"
+#       cronjob: ">1"
+#       metainfo: ">2"
 
 page:
     title: translate:dummy_title    # Übersetzung definieren in lang/de_de.lang
