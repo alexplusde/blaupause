@@ -24,11 +24,11 @@ Gängige Code-Beispiele zum Installieren von YForm-Tablesets, Meta-Infofeldern u
 
 Dein Addon nutzt YForm als Ausgangsbasis? Nutze YForm-Tabellen innerhalb deiner Addon-Seiten via https://friendsofredaxo.github.io/tricks/addons/yform/im-addon
 
-## `update.php`
+### `update.php`
 
 Gängige Code-Beispiele, die in Abhängigkeit der Vorgänger-Version deines Addons ausgeführt werden.
 
-## `uninstall.php`
+### `uninstall.php`
 
 Alle Code-Beispiele, die du in der `install.php` nutzt, können hier wieder rückkgängig gemacht werden.
 
