@@ -1,7 +1,7 @@
-package: dummy # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
+package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
 version: '2.0.0-dev' # Aktuelle Version. 
 author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
-supportpage: https://github.com/alexplusde/dummy # Support-Seite, wird im Installer gezeigt
+supportpage: https://github.com/alexplusde/blaupause # Support-Seite, wird im Installer gezeigt
 # load: late 
 
 requires:                       # Abhängigkeiten definieren, z.B.
@@ -14,35 +14,35 @@ requires:                       # Abhängigkeiten definieren, z.B.
 #       metainfo: ">2"
 
 page:
-    title: translate:dummy_title    # Übersetzung definieren in lang/de_de.lang
+    title: translate:blaupause_title    # Übersetzung definieren in lang/de_de.lang
     prio: 100                       # Reihenfolge in Relation zur Prio anderer Menüeinträge 
     icon: rex-icon fa-gear
 
 pages:
-    dummy: # key, unter dem die Seite zu finden sein wird. Passende Datei im Addon-Verzeichnis `pages/dummy.dummypage.php` muss vorhanden sein.
-        title: translate:dummy_title
+    blaupause: # key, unter dem die Seite zu finden sein wird. Passende Datei im Addon-Verzeichnis `pages/blaupause.blaupausepage.php` muss vorhanden sein.
+        title: translate:blaupause_title
 #        main: true                 
-        block: system               # 'system', um ins Hauptmenü zu verschieben, oder 'dummy', um eigenen Dummy-Abschnitt zu erstellen. Weglassen, um bei den Addons gelistet zu werden 
+        block: system               # 'system', um ins Hauptmenü zu verschieben, oder 'blaupause', um eigenen blaupause-Abschnitt zu erstellen. Weglassen, um bei den Addons gelistet zu werden 
         prio: 15                    # Reihenfolge in Abhängigkeit anderer Addons
         icon: rex-icon fa-calendar  # Icon neben dem Menüpunkt
-        perm: dummy[]               # Berechtigung, die einer Rolle zugewiesen werden kann. z.B. `admin` für Admin, oder `dummy['xyz']` für dein eigenes Addon
-        subpages:                   # Automatisches Untermenü unterhalb des Reisters von `dummypage` erzeugen
+        perm: blaupause[]               # Berechtigung, die einer Rolle zugewiesen werden kann. z.B. `admin` für Admin, oder `blaupause['xyz']` für dein eigenes Addon
+        subpages:                   # Automatisches Untermenü unterhalb des Reisters von `blaupausepage` erzeugen
             table:
-                title: translate:dummy_settings
+                title: translate:blaupause_settings
                 icon: rex-icon fa-gear
                 itemclass: pull-right
                 perm: admin
             settings:
-                title: translate:dummy_settings
+                title: translate:blaupause_settings
                 icon: rex-icon fa-gear
                 itemclass: pull-right
                 perm: admin
             docs:
-                title: translate:dummy_docs
+                title: translate:blaupause_docs
                 subPath: README.md  # Gibt anstelle einer Seite unter `pages` die README.md des Addons aus
                 icon: rex-icon fa-info-circle
                 itemclass: pull-right
-                perm: dummy[docs]
+                perm: blaupause[docs]
 
 default_config:
-    field: 'Test' # Bei der Installation belegt REDAXO automatisch in der rex_config-Tabelle im Namespace `dummy` im Feld `field` den Wert `Test` 
+    field: 'Test' # Bei der Installation belegt REDAXO automatisch in der rex_config-Tabelle im Namespace `blaupause` im Feld `field` den Wert `Test` 

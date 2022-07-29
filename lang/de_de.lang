@@ -1,12 +1,12 @@
-dummy_title: Dummy-Addon
+blaupause_title: blaupause-Addon
 
 # FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden
 
 # Konfigurationsformulare
-dummy_config = Einstellungen
-dummy_config_mytextfield_label = Test-Feld
-dummy_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
+blaupause_config = Einstellungen
+blaupause_config_mytextfield_label = Test-Feld
+blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
 
 # YForm Tablelen-Übersetzung
-dummy_table_name_label = Name
-dummy_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
+blaupause_table_name_label = Name
+blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 

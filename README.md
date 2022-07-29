@@ -1,9 +1,9 @@
-# Dummy - Dieses Repository kopieren, anpassen, AddOn-Entwicklung für REDAXO starten
+# Blaupause - Dieses Repository kopieren, anpassen, AddOn-Entwicklung für REDAXO starten
 
-Ein REDAXO-Dummy-Addon für einen schnelleren Start bei der Addon-Entwicklung. 
+Vorlage für REDAXO-Addons für einen schnelleren Start bei der Addon-Entwicklung.
 
-1. https://github.com/alexplusde/dummy/archive/refs/heads/main.zip ZIP der aktuellen Vorlage herunterladen oder direkt in GitHub ein Repo auf Basis von `alexplusde/dummy` erstellen: https://github.com/new/import und dort `https://github.com/alexplusde/dummy.git` angeben.
-2. Mit "Suchen und Ersetzen" alles, was `dummy` heißt, durch den Namen deines Addons ersetzen, z.B. `supi-dupi-kalender`, und speichern. Sowohl Dateinamen, als auch Dateiinhalte. 
+1. https://github.com/alexplusde/blaupause/archive/refs/heads/main.zip ZIP der aktuellen Vorlage herunterladen oder direkt in GitHub ein Repo auf Basis von `alexplusde/blaupause` erstellen: https://github.com/new/import und dort `https://github.com/alexplusde/blaupause.git` angeben.
+2. Mit "Suchen und Ersetzen" alles, was `blaupause` heißt, durch den Namen deines Addons ersetzen, z.B. `supi-dupi-kalender`, und speichern. Sowohl Dateinamen, als auch Dateiinhalte. 
 3. Alles löschen, was du aktuell nicht brauchst (oder für später auskommentiert lassen)
 
 ## Features
@@ -50,7 +50,7 @@ Beginne mit einem Konfigurations-Formular, das bereits best practice in REDAXO u
 
 ## Lizenz
 
-MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/dummy/blob/master/LICENSE.md)  
+MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/blaupause/blob/master/LICENSE.md)  
 
 ## Autoren
 

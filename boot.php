@@ -5,15 +5,15 @@
 /*
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
 rex_yform_manager_dataset::setModelClass(
-    'rex_dummy',
-    dummy::class
+    'rex_blaupause',
+    blaupause::class
 );
 */
 
 # Prüfen, ob ein anderes Addon installiert ist, bspw. Cronjob-Addon
 /*
 if (rex_addon::get('cronjob')->isAvailable() && !rex::isSafeMode()) {
-    rex_cronjob_manager::registerType('rex_cronjob_dummy');
+    rex_cronjob_manager::registerType('rex_cronjob_blaupause');
 }
 */
 
