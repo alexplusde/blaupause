@@ -1,8 +1,8 @@
-blaupause_title: Blaupause
+blaupause_title = Blaupause
 
-stellenangebote_table = Blaupause
-stellenangebote_settings Einstellungen
-stellenangebote_docs = Hilfe
+blaupause_table = Blaupause
+blaupause_settings Einstellungen
+blaupause_docs = Hilfe
 
 # FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden
 
