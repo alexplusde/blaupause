@@ -15,7 +15,9 @@
 # rex_dir::delete(rex_path::get('blaupause'), true);
 
 # YForm-Tabellen löschen (die YForm-Tabellendefinition wird gelöscht, nicht die Datenbank-Tabellen)
+# if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
 # rex_yform_manager_table_api::removeTable('rex_blaupause');
+# }
 
 # Weitere Vorgänge
 # ...
