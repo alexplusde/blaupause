@@ -28,10 +28,9 @@ pages:
         perm: blaupause[]               # Berechtigung, die einer Rolle zugewiesen werden kann. z.B. `admin` für Admin, oder `blaupause['xyz']` für dein eigenes Addon
         subpages:                   # Automatisches Untermenü unterhalb des Reisters von `blaupausepage` erzeugen
             table:
-                title: translate:blaupause_settings
+                title: translate:blaupause_table
                 icon: rex-icon fa-gear
-                itemclass: pull-right
-                perm: admin
+                perm: blaupause[]
             settings:
                 title: translate:blaupause_settings
                 icon: rex-icon fa-gear
