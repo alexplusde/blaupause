@@ -1,4 +1,5 @@
 <?php
+
 /* Tablesets aktualisieren */
 
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
