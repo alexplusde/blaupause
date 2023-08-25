@@ -32,6 +32,10 @@ Gängige Code-Beispiele, die in Abhängigkeit der Vorgänger-Version deines Addo
 
 Alle Code-Beispiele, die du in der `install.php` nutzt, können hier wieder rückkgängig gemacht werden.
 
+### `lib/blaupause.php`
+
+Liefere passende YOrm Dataset-Methoden mit deinem Addon. Diese kannst du dir ganz einfach mithilfe von <https://github.com/alexplusde/ymca> erstellen lassen, wenn dein Tableset soweit fertig ist.
+
 ### `lang/`
 
 Blaupause für deine eigene Sprachdatei. Beginne die Addon-Entwicklung direkt so, dass weitere Sprachen ohne Anpassungen ergänzt werden können.
