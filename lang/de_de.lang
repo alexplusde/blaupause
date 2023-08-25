@@ -11,6 +11,6 @@ blaupause_config = Einstellungen
 blaupause_config_mytextfield_label = Test-Feld
 blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
 
-# YForm Tablelen-Übersetzung
+# YForm Tabellen-Übersetzung
 blaupause_table_name_label = Name
 blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
