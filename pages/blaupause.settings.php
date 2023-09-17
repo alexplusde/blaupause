@@ -2,7 +2,7 @@
 
 $addon = rex_addon::get('blaupause');
 
-$form = rex_config_form::factory($addon->name);
+$form = rex_config_form::factory($addon->getName());
 
 $field = $form->addInputField('text', 'mytextfield', null, ['class' => 'form-control']);
 $field->setLabel(rex_i18n::msg('blaupause_config_mytextfield_label'));
