@@ -45,3 +45,9 @@ pages:
 
 default_config:
     field: 'Test' # Bei der Installation belegt REDAXO automatisch in der rex_config-Tabelle im Namespace `blaupause` im Feld `field` den Wert `Test` 
+
+installer_ignore:
+- .git
+- .gitignore
+- .github
+- .php-cs-fixer.dist.php
