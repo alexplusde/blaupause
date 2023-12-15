@@ -2,11 +2,10 @@
 
 class rex_cronjob_blaupause extends rex_cronjob
 {
-
     public function execute()
     {
         /* Tu was */
-        if(false) {
+        if (false) {
             $this->setMessage('Fehlermeldung');
             return false;
         }
@@ -20,7 +19,6 @@ class rex_cronjob_blaupause extends rex_cronjob
         return 'Blaupause Beispiel-Cronjob';
     }
 
-
     public function getParamFields()
     {
         $fields = [
@@ -29,7 +27,7 @@ class rex_cronjob_blaupause extends rex_cronjob
                 'name' => 'blaupause_field',
                 'type' => 'link', // text, textarea, link, media, select, checkbox
                 'notice' => 'Notizfeld',
-            ]
+            ],
         ];
 
         return $fields;
