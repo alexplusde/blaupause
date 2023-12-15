@@ -25,3 +25,13 @@ rex_extension::register('REX_YFORM_SAVED', function (rex_extension_point $ep) {
     // Mein Code, oder meine Funktion / statische Methode aufrufen
 });
 */
+
+/** 
+ * CSS und JS im Backend laden, wenn eingeloggt.
+ */
+/*
+if (rex::isBackend() && rex::getUser()) {
+    rex_view::addCssFile($this->getAssetsUrl('backend.css'));
+    rex_view::addJsFile($this->getAssetsUrl('backend.js'));
+}
+*/
