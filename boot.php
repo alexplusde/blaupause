@@ -26,12 +26,18 @@ rex_extension::register('REX_YFORM_SAVED', function (rex_extension_point $ep) {
 });
 */
 
-/** 
- * CSS und JS im Backend laden, wenn eingeloggt.
- */
+// CSS und JS im Backend laden, wenn eingeloggt.
 /*
 if (rex::isBackend() && rex::getUser()) {
     rex_view::addCssFile($this->getAssetsUrl('backend.css'));
     rex_view::addJsFile($this->getAssetsUrl('backend.js'));
+}
+*/
+
+// Beispiel: Cronjob registriert, blaupause_cronjob.php beachten.
+// https://friendsofredaxo.github.io/tricks/addons/cronjob/article_archive_cronjob#artikel-autoarchivierung-mittels-cronjob
+/*
+if (rex_addon::get('cronjob')->isAvailable() && !rex::isSafeMode()) {
+rex_cronjob_manager::registerType('rex_cronjob_blaupause');
 }
 */
