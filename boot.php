@@ -26,7 +26,7 @@ rex_extension::register('REX_YFORM_SAVED', function (rex_extension_point $ep) {
 });
 */
 
-/** 
+/**
  * CSS und JS im Backend laden, wenn eingeloggt.
  */
 /*
