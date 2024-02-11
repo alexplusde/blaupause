@@ -1,5 +1,7 @@
 <?php
 
+echo rex_view::title(rex_i18n::msg('blaupause_title'));
+
 $addon = rex_addon::get('blaupause');
 
 $form = rex_config_form::factory($addon->getName());
