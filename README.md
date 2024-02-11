@@ -40,7 +40,7 @@ Liefere passende YOrm Dataset-Methoden mit deinem Addon. Diese kannst du dir gan
 
 Blaupause für deine eigene Sprachdatei. Beginne die Addon-Entwicklung direkt so, dass weitere Sprachen ohne Anpassungen ergänzt werden können.
 
-### `fragmente/`
+### `fragments/`
 
 Blaupause für die Nutzung eigener Fragmente.
 
