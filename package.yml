@@ -1,13 +1,13 @@
 package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
-version: '2.0.0-dev' # Aktuelle Version. 
+version: '2.0.0-dev-2024-02-11' # Aktuelle Version. 
 author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
 supportpage: https://github.com/alexplusde/blaupause # Support-Seite, wird im Installer gezeigt
 # load: late 
 
 requires:                       # Abhängigkeiten definieren, z.B.
     php:
-        version: '>7.3,<9'
-    redaxo: ^5.13              # REDAXO Core-Version
+        version: '>8.1,<9'
+    redaxo: ^5.16              # REDAXO Core-Version
     packages:                  # Plugins und Addons
         yform: "^4"
 #       cronjob: ">1"
