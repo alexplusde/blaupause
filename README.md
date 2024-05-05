@@ -20,9 +20,9 @@ Gängige Code-Beispiele wie der Syntax zum Überprüfen einer Addon-Installation
 
 Gängige Code-Beispiele zum Installieren von YForm-Tablesets, Meta-Infofeldern und dem Verwenden von Extension Points, Cronjobs u.a.
 
-### `dataedit.php` für YForm-Datentabellen
+### `rex_blaupause.tableset.json` und `pages/blaupause.table.php` für YForm im Addon
 
-Dein Addon nutzt YForm als Ausgangsbasis? Nutze YForm-Tabellen innerhalb deiner Addon-Seiten via https://friendsofredaxo.github.io/tricks/addons/yform/im-addon
+Dein Addon nutzt YForm als Ausgangsbasis? Importiere bei der Installation dein Tableset und nutze YForm-Tabellen innerhalb deiner Addon-Seiten.
 
 ### `update.php`
 
