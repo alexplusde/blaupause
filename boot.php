@@ -33,11 +33,3 @@ if (rex::isBackend() && rex::getUser()) {
     rex_view::addJsFile($this->getAssetsUrl('backend.js'));
 }
 */
-
-// Beispiel: Cronjob registriert, blaupause_cronjob.php beachten.
-// https://friendsofredaxo.github.io/tricks/addons/cronjob/article_archive_cronjob#artikel-autoarchivierung-mittels-cronjob
-/*
-if (rex_addon::get('cronjob')->isAvailable() && !rex::isSafeMode()) {
-rex_cronjob_manager::registerType('rex_cronjob_blaupause');
-}
-*/

@@ -2,8 +2,8 @@
 
 Vorlage für REDAXO-Addons für einen schnelleren Start bei der Addon-Entwicklung.
 
-1. https://github.com/alexplusde/blaupause/archive/refs/heads/main.zip ZIP der aktuellen Vorlage herunterladen oder direkt in GitHub ein Repo auf Basis von `alexplusde/blaupause` erstellen: https://github.com/new/import und dort `https://github.com/alexplusde/blaupause.git` angeben.
-2. Mit "Suchen und Ersetzen" alles, was `blaupause` heißt, durch den Namen deines Addons ersetzen, z.B. `supi-dupi-kalender`, und speichern. Sowohl Dateinamen, als auch Dateiinhalte. 
+1. <https://github.com/alexplusde/blaupause/archive/refs/heads/main.zip> ZIP der aktuellen Vorlage herunterladen oder direkt in GitHub ein Repo auf Basis von `alexplusde/blaupause` erstellen: <https://github.com/new/import> und dort `https://github.com/alexplusde/blaupause.git` angeben.
+2. Mit "Suchen und Ersetzen" alles, was `blaupause` heißt, durch den Namen deines Addons ersetzen, z.B. `supi-dupi-kalender`, und speichern. Sowohl Dateinamen, als auch Dateiinhalte.
 3. Alles löschen, was du aktuell nicht brauchst (oder für später auskommentiert lassen)
 
 ## Features
@@ -38,11 +38,19 @@ Liefere passende YOrm Dataset-Methoden mit deinem Addon. Diese kannst du dir gan
 
 ### `lang/`
 
-Blaupause für deine eigene Sprachdatei. Beginne die Addon-Entwicklung direkt so, dass weitere Sprachen ohne Anpassungen ergänzt werden können.
+Blaupause für deine eigenen Sprachdateien. Beginne die Addon-Entwicklung direkt so, dass weitere Sprachen ohne Anpassungen ergänzt werden können. Dazu kannst du in REDAXO an verschiedenen Stellen `rex_i18n::msg('blaupause_key')` nutzen oder `translate:blaupause_key` in YForm-Tabellen und Modulnamen.
+
+### `pages/blaupause.settings.php`
+
+Blaupause für die Einstellungsseite deines Addons. Passe die Einstellungsseite an deine Bedürfnisse an und nutze die REDAXO-Formularklassen `rex_config_form` und `rex_form`.
 
 ### `fragments/`
 
 Blaupause für die Nutzung eigener Fragmente.
+
+### `wildcard/`
+
+In Arbeit: Definiere eigene Sprachkeys für das Addon [Wildcard](https://github.com/alexplusde/wildcard) oder Sprog und lasse diese automatisch installieren und updaten.
 
 ### Docs-Seite
 
@@ -59,8 +67,8 @@ MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/blaupause/blob/mast
 ## Autoren
 
 **Alexander Walther**  
-http://www.alexplus.de  
-https://github.com/alexplusde  
+<http://www.alexplus.de>  
+<https://github.com/alexplusde>  
 
 **Projekt-Lead**  
 [Alexander Walther](https://github.com/alexplusde)
