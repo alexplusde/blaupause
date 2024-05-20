@@ -1,16 +1,21 @@
-blaupause_title = Blaupause
+blaupause_title = Blaupause # Titel des Addons
+
+# Menüpunkte
 
 blaupause_table = Blaupause
 blaupause_settings = Einstellungen
 blaupause_docs = Hilfe
 
-# FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden
+# Tipp: FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden.
+# Fertige Übersetzungen mit Copilot oder Profi-Übersetzungstools an.
 
 # Konfigurationsformulare
+
 blaupause_config = Einstellungen
 blaupause_config_mytextfield_label = Test-Feld
 blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
 
 # YForm Tabellen-Übersetzung
+
 blaupause_table_name_label = Name
 blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 

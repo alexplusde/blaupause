@@ -1,0 +1,25 @@
+{
+    "wildcards": {
+        "blaupause.beispiel.string": {
+            "timestamp": "2024-05-20 12:00:00",
+            "translations": {
+                "da_DK": "Blåprint",
+                "de_DE": "Blaupause",
+                "el_GR": "Πρότυπο",
+                "en_GB": "Blueprint",
+                "es_ES": "Plantilla",
+                "fi_FI": "Malli",
+                "fr_FR": "Modèle",
+                "it_IT": "Modello",
+                "nl_NL": "Sjabloon",
+                "no_NO": "Mal",
+                "pl_PL": "Szablon",
+                "ro_RO": "Șablon",
+                "sl_SI": "Predloga",
+                "sv_SE": "Mall",
+                "tr_TR": "Şablon",
+                "uk_UA": "Шаблон"
+            }
+        }
+    }
+}
