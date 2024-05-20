@@ -4,9 +4,11 @@
 $addon = rex_addon::get('blaupause');
 
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
-    rex_yform_manager_table_api::importTablesets(rex_file::get(rex_path::addon($addon->getName(), 'install/rex_blaupause.tableset.json')));
+    rex_yform_manager_table_api::importTablesets(rex_file::get(__DIR__ . 'install/rex_blaupause.tableset.json'));
     rex_yform_manager_table::deleteCache();
 }
+
+/* Todo: Wildcard aktualisieren */
 
 /*
 $modules = scandir(rex_path::addon("blaupause")."module");

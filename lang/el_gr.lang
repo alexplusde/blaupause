@@ -1,0 +1,21 @@
+blaupause_title = Blueprint # Addon title
+
+# Menu items
+
+blaupause_table = Blueprint
+blaupause_settings = Settings
+blaupause_docs = Help
+
+# Tip: FriendsOfREDAXO addons can be submitted to YTraduco for translation.
+# Complete translations with Copilot or professional translation tools.
+
+# Configuration forms
+
+blaupause_config = Settings
+blaupause_config_mytextfield_label = Test field
+blaupause_config_mytextfield_notice = Note explaining something and possibly mentioning a default value. Here: <code>Test</code>
+
+# YForm table translation
+
+blaupause_table_name_label = Name
+blaupause_table_name_notice = Note explaining something and possibly mentioning an example value, e.g.: <code>My Name</code>
