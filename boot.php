@@ -52,12 +52,12 @@ if (rex::isBackend() && rex::getUser()) {
 
 if (rex::isBackend() && \rex_addon::get('blaupause') && \rex_addon::get('blaupause')->isAvailable() && !rex::isSafeMode()) {
     $addon = rex_addon::get('blaupause');
-    $pages = $addon->getProperty('pages'); 
+    $pages = $addon->getProperty('pages');
     // oder $page = $addon->getProperty('page');
 
     if(!rex::getConsole()) {
         $_csrf_key = rex_yform_manager_table::get('rex_blaupause')->getCSRFKey();
-        
+
         $token = rex_csrf_token::factory($_csrf_key)->getUrlParams();
 
         $params = [];
