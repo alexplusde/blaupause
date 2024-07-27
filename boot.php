@@ -49,20 +49,29 @@ if (rex::isBackend() && rex::getUser()) {
 
 // YForm-Tabelle? `+`-Button im Hauptmenü hinzufügen
 /*
-if(rex::isBackend()) {
+
+if (rex::isBackend() && \rex_addon::get('blaupause') && \rex_addon::get('blaupause')->isAvailable() && !rex::isSafeMode()) {
     $addon = rex_addon::get('blaupause');
-    $pages = $addon->getProperty('pages');
+    $pages = $addon->getProperty('pages'); 
+    // oder $page = $addon->getProperty('page');
 
-    $_csrf_key = rex_yform_manager_table::get('rex_blaupause')->getCSRFKey();
-    $token = rex_csrf_token::factory($_csrf_key)->getUrlParams();
+    if(!rex::getConsole()) {
+        $_csrf_key = rex_yform_manager_table::get('rex_blaupause')->getCSRFKey();
+        
+        $token = rex_csrf_token::factory($_csrf_key)->getUrlParams();
 
-    $params = array();
-    $params['table_name'] = 'rex_blaupause';
-    $params['rex_yform_manager_popup'] = '0';
-    $params['_csrf_token'] = $token['_csrf_token'];
-    $params['func'] = 'add';
+        $params = [];
+        $params['table_name'] = 'rex_blaupause'; // Tabellenname anpassen
+        $params['rex_yform_manager_popup'] = '0';
+        $params['_csrf_token'] = $token['_csrf_token'];
+        $params['func'] = 'add';
 
-    $pages['blaupause']['title'] .= ' <a style="position: absolute; top: 0; right: 0; padding: 5px; margin: 8px 19px 8px 8px" href="'.rex_url::backendPage('blaupause/table', $params) .'" class="label label-default pull-right">+</a>';
-    $addon->setProperty('pages', $pages);
+        $href = rex_url::backendPage('blaupause/entry', $params);
+
+        $pages['blaupause']['title'] .= ' <a class="label label-primary tex-primary" style="position: absolute; right: 18px; top: 10px; padding: 0.2em 0.6em 0.3em; border-radius: 3px; color: white; display: inline; width: auto;" href="' . $href . '">+</a>';
+        $addon->setProperty('pages', $pages);
+        // oder $page['title'] .= ' <a class="label label-primary tex-primary" style="position: absolute; right: 18px; top: 10px; padding: 0.2em 0.6em 0.3em; border-radius: 3px; color: white; display: inline; width: auto;" href="' . $href . '">+</a>';
+        // oder $addon->setProperty('page', $page);
+    }
 }
-    */
+*/
