@@ -55,7 +55,7 @@ if (rex::isBackend() && \rex_addon::get('blaupause') && \rex_addon::get('blaupau
     $pages = $addon->getProperty('pages');
     // oder $page = $addon->getProperty('page');
 
-    if(!rex::getConsole()) {
+    if (rex::isBackend() && !empty($_REQUEST)) {
         $_csrf_key = rex_yform_manager_table::get('rex_blaupause')->getCSRFKey();
 
         $token = rex_csrf_token::factory($_csrf_key)->getUrlParams();
