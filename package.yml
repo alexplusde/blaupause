@@ -34,13 +34,13 @@ pages:
             settings:
                 title: translate:blaupause_settings
                 icon: rex-icon fa-gear
-                itemclass: pull-right
+                itemClass: pull-right
                 perm: admin
             docs:
                 title: translate:blaupause_docs
                 subPath: README.md  # Gibt anstelle einer Seite unter `pages` die README.md des Addons aus
                 icon: rex-icon fa-info-circle
-                itemclass: pull-right
+                itemClass: pull-right
                 perm: blaupause[docs]
 
 default_config:
