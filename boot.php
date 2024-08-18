@@ -28,7 +28,14 @@ if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
 // Prüfen, ob ein anderes Addon installiert ist, bspw. Cronjob-Addon
 /*
 if (rex_addon::get('cronjob')->isAvailable() && !rex::isSafeMode()) {
-    rex_cronjob_manager::registerType('rex_cronjob_blaupause');
+    rex_cronjob_manager::registerType(Cronjob\Blaupause::class);
+}
+*/
+
+// API-Route registrieren, wenn das Addon mit einer eigenen API kommt.
+/*
+if (rex_plugin::get('yform', 'rest')->isAvailable() && !rex::isSafeMode()) {
+    Api\Restful::init();
 }
 */
 
