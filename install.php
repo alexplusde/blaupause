@@ -26,7 +26,6 @@ if (rex_addon::get('url') && rex_addon::get('url')->isAvailable()) {
     }
 }
 
-
 /* Todo: Wildcard aktualisieren */
 
 /*
