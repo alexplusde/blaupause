@@ -1,5 +1,5 @@
 package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
-version: '2.0.0-dev-2024-05-20' # Aktuelle Version. 
+version: '2.0.0-dev-2024-12-28' # Aktuelle Version. 
 author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
 supportpage: https://github.com/alexplusde/blaupause # Support-Seite, wird im Installer gezeigt
 # load: late 
