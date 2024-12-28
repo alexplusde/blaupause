@@ -10,8 +10,13 @@ requires:                       # Abhängigkeiten definieren, z.B.
     redaxo: ^5.16              # REDAXO Core-Version
     packages:                  # Plugins und Addons
         yform: "^4"
+#       tracks: "^4"
 #       cronjob: ">1"
 #       metainfo: ">2"
+
+# conflicts:
+#    packages:
+#        - package: "<4" # Konflikte mit Versionen von anderen Addons
 
 page:
     title: translate:blaupause_title    # Übersetzung definieren in lang/de_de.lang
