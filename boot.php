@@ -4,6 +4,7 @@ namespace Bauthor\Blaupause;
 
 use rex;
 use rex_addon;
+use rex_config;
 use rex_cronjob_manager;
 use rex_csrf_token;
 use rex_extension;
@@ -22,6 +23,14 @@ if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
         'rex_blaupause',
         Blaupause::class
     );
+}
+*/
+
+/* Nutzt du T-Racks? <https://github.com/alexplusde/tracks> Module und Addons bei der Entwicklung synchroinsieren */
+/*
+if (rex::isBackend() && rex::isDebugMode() && rex_config::get('blaupause', 'dev')) {
+    \Tracks\🦖::writeModule('blaupause', 'blaupause.%');
+    \Tracks\🦖::writeTemplate('blaupause', 'blaupause.%');
 }
 */
 

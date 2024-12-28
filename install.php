@@ -1,5 +1,13 @@
 <?php
 
+use rex_addon;
+use rex_sql;
+use rex_yform_manager_table;
+use rex_yform_manager_table_api;
+use rex_file;
+use rex_article;
+use rex_config;
+
 /* Tablesets aktualisieren */
 $addon = rex_addon::get('blaupause');
 
@@ -28,24 +36,12 @@ if (rex_addon::get('url') && rex_addon::get('url')->isAvailable()) {
 
 /* Todo: Wildcard aktualisieren */
 
-/*
-$modules = scandir(rex_path::addon("blaupause")."module");
+/* Nutzt du T-Racks? <https://github.com/alexplusde/tracks> Module und Addons mit installieren */
 
-foreach ($modules as $module) {
-    if ($module == "." || $module == "..") {
-        continue;
-    }
-    $module_array = json_decode(rex_file::get(rex_path::addon("blaupause")."module/".$module), 1);
-
-    rex_sql::factory()->setDebug(0)->setTable("rex_module")
-    ->setValue("name", $module_array['name'])
-    ->setValue("key", $module_array['key'])
-    ->setValue("input", $module_array['input'])
-    ->setValue("output", $module_array['output'])
-    ->setValue("createuser", "")
-    ->setValue("updateuser", "blaupause")
-    ->setValue("createdate", date("Y-m-d H:i:s"))
-    ->setValue("updatedate", date("Y-m-d H:i:s"))
-    ->insertOrUpdate();
+if(rex_addon::exists('tracks')) {
+    \Tracks\🦖::forceBackup('school'); // Sichert standardmäßig Module und Templates
+    \Tracks\🦖::updateModule('school'); // Synchronisiert Module
+    \Tracks\🦖::updateTemplate('school'); // Synchronisiert Templates
 }
-*/
+
+\rex_delete_cache();
