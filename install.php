@@ -1,12 +1,13 @@
 <?php
 
 use rex_addon;
+use rex_article;
+use rex_config;
+use rex_file;
 use rex_sql;
 use rex_yform_manager_table;
 use rex_yform_manager_table_api;
-use rex_file;
-use rex_article;
-use rex_config;
+use Tracks\🦖;
 
 /* Tablesets aktualisieren */
 $addon = rex_addon::get('blaupause');
@@ -38,10 +39,10 @@ if (rex_addon::get('url') && rex_addon::get('url')->isAvailable()) {
 
 /* Nutzt du T-Racks? <https://github.com/alexplusde/tracks> Module und Addons mit installieren */
 
-if(rex_addon::exists('tracks')) {
-    \Tracks\🦖::forceBackup('school'); // Sichert standardmäßig Module und Templates
-    \Tracks\🦖::updateModule('school'); // Synchronisiert Module
-    \Tracks\🦖::updateTemplate('school'); // Synchronisiert Templates
+if (rex_addon::exists('tracks')) {
+    🦖::forceBackup('school'); // Sichert standardmäßig Module und Templates
+    🦖::updateModule('school'); // Synchronisiert Module
+    🦖::updateTemplate('school'); // Synchronisiert Templates
 }
 
-\rex_delete_cache();
+rex_delete_cache();
