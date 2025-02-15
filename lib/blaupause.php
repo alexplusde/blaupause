@@ -1,6 +1,6 @@
 <?php
 
-namespace Bauthor\Blaupause;
+namespace Alexplusde\Blaupause;
 
 use rex_yform_manager_dataset;
 

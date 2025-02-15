@@ -1,10 +1,10 @@
-blaupause_title = Blaupause # Titel des Addons
+blaupause.title = Blaupause # Titel des Addons
 
 # Menüpunkte
 
-blaupause_table = Blaupause
-blaupause_settings = Einstellungen
-blaupause_docs = Hilfe
+blaupause.table = Blaupause
+blaupause.settings = Einstellungen
+blaupause.docs = Hilfe
 
 # Tipp: FriendsOfREDAXO-Addons können bei YTraduco zur Übersetzung eingereicht werden.
 # Fertige Übersetzungen mit Copilot oder Profi-Übersetzungstools an.

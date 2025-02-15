@@ -2,9 +2,9 @@
 
 /* Nutze das Addon YMCA, um die Model-Klasse zu generieren */
 
-namespace Bauthor\Blaupause\Api;
+namespace Alexplusde\Blaupause\Api;
 
-use Bauthor\Blaupause\Blaupause;
+use Alexplusde\Blaupause\Blaupause;
 use rex_yform_rest;
 use rex_yform_rest_route;
 

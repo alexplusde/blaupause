@@ -1,3 +1,5 @@
+# Suche mit regex nach ` *#.*$` und ersetze durch ``, um Kommentare zu entfernen
+
 package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
 version: '2.0.0-dev-2024-12-28' # Aktuelle Version. 
 author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
@@ -19,13 +21,13 @@ requires:                       # Abhängigkeiten definieren, z.B.
 #        - package: "<4" # Konflikte mit Versionen von anderen Addons
 
 page:
-    title: translate:blaupause_title    # Übersetzung definieren in lang/de_de.lang
+    title: translate:blaupause.title    # Übersetzung definieren in lang/de_de.lang
     prio: 100                       # Reihenfolge in Relation zur Prio anderer Menüeinträge 
     icon: rex-icon fa-gear
 
 pages:
     blaupause: # key, unter dem die Seite zu finden sein wird. Passende Datei im Addon-Verzeichnis `pages/blaupause.blaupausepage.php` muss vorhanden sein.
-        title: translate:blaupause_title
+        title: translate:blaupause.title
 #        main: true                 
         block: system               # 'system', um ins Hauptmenü zu verschieben, oder 'blaupause', um eigenen blaupause-Abschnitt zu erstellen. Weglassen, um bei den Addons gelistet zu werden 
         prio: 15                    # Reihenfolge in Abhängigkeit anderer Addons

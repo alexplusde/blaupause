@@ -1,6 +1,6 @@
 <?php
 
-echo rex_view::title(rex_i18n::msg('blaupause_title'));
+echo rex_view::title(rex_i18n::msg('blaupause.title'));
 
 $yform = $this->getProperty('yform', []);
 $yform = $yform[rex_be_controller::getCurrentPage()] ?? [];

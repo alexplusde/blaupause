@@ -1,6 +1,6 @@
 <?php
 
-namespace Bauthor\Blaupause\Cronjob;
+namespace Alexplusde\Blaupause\Cronjob;
 
 use rex_cronjob;
 use rex_i18n;

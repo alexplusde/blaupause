@@ -12,7 +12,7 @@ foreach (glob(rex_addon::get('blaupause')->getPath('docs') . '/*.md') ?: [] as $
 
 $currenMDFile = rex_request('mdfile', 'string', '01_intro');
 if (!array_key_exists($currenMDFile, $mdFiles)) {
-    $currenMDFile = '01_a_intro';
+    $currenMDFile = '01_intro';
 }
 
 $page = rex_be_controller::getPageObject('blaupause/docs');
@@ -22,7 +22,7 @@ if (null !== $page) {
         $keyWithoudPrio = mb_substr($key, 3);
         $currenMDFileWithoudPrio = mb_substr($currenMDFile, 3);
         $page->addSubpage(
-            (new rex_be_page($key, rex_i18n::msg('blaupause_docs_' . $keyWithoudPrio)))
+            (new rex_be_page($key, rex_i18n::msg('blaupause.docs.' . $keyWithoudPrio)))
             ->setSubPath($mdFile)
             ->setHref('index.php?page=blaupause/docs&mdfile=' . $key)
             ->setIsActive($key == $currenMDFile),
@@ -30,7 +30,7 @@ if (null !== $page) {
     }
 }
 
-echo rex_view::title($this->i18n('blaupause_title'));
+echo rex_view::title($this->i18n('blaupause.title'));
 
 [$Toc, $Content] = rex_markdown::factory()->parseWithToc(rex_file::require($mdFiles[$currenMDFile]), 2, 3, [
     rex_markdown::SOFT_LINE_BREAKS => false,
