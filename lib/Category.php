@@ -7,7 +7,7 @@ use rex_extension_point;
 use rex_csrf_token;
 use rex_url;
 
-class Blaupause extends rex_yform_manager_dataset
+class Entry extends rex_yform_manager_dataset
 {
     // https://github.com/yakamara/redaxo_yform/blob/master/docs/04_yorm.md#yorm-mit-eigener-model-class-verwenden
     // Lasse dir die Klasse anhand deines Tablesets selbst bauen: https://github.com/alexplusde/ymca

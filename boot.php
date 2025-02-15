@@ -21,7 +21,11 @@ use rex_yform_manager_table;
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
     rex_yform_manager_dataset::setModelClass(
         'rex_blaupause',
-        Blaupause::class
+        Entry::class
+    );
+    rex_yform_manager_dataset::setModelClass(
+        'rex_blaupause_category',
+        Category::class
     );
 }
 */
@@ -94,6 +98,7 @@ if (rex::isBackend() && \rex_addon::get('blaupause') && \rex_addon::get('blaupau
 
 /* Listendarstellung verändern 
 if (rex::isBackend()) {
-    rex_extension::register('YFORM_DATA_LIST', Blaupause::epYformDataList(...));
+    rex_extension::register('YFORM_DATA_LIST', Entry::epYformDataList(...));
+    rex_extension::register('YFORM_DATA_LIST', Category::epYformDataList(...));
 }
 */
