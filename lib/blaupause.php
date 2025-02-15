@@ -2,10 +2,10 @@
 
 namespace Alexplusde\Blaupause;
 
-use rex_yform_manager_dataset;
-use rex_extension_point;
 use rex_csrf_token;
+use rex_extension_point;
 use rex_url;
+use rex_yform_manager_dataset;
 
 class Blaupause extends rex_yform_manager_dataset
 {
