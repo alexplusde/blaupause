@@ -9,11 +9,15 @@ use rex_yform_manager_table;
 use rex_yform_manager_table_api;
 use Tracks\🦖;
 
-/* Tablesets aktualisieren */
 $addon = rex_addon::get('blaupause');
 
+/* Tabellen anlegen, beschleunigt den späteren Import mit YForm und legt zusätzliche Einstellungen fest, bspw. Unique-Prüfung direkt an der DB */
+include __DIR__ . '/install/table-scheme.php';
+
+/* Tablesets aktualisieren */
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
-    rex_yform_manager_table_api::importTablesets(rex_file::get(__DIR__ . '/install/rex_blaupause.tableset.json'));
+    rex_yform_manager_table_api::importTablesets(rex_file::get(__DIR__ . '/install/rex_blaupause_entry.tableset.json'));
+    rex_yform_manager_table_api::importTablesets(rex_file::get(__DIR__ . '/install/rex_blaupause_category.tableset.json'));
     rex_yform_manager_table::deleteCache();
 }
 

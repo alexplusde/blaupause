@@ -19,3 +19,26 @@ blaupause_config_mytextfield_notice = Notiz, die etwas erklärt und bspw. einen 
 
 blaupause_table_name_label = Name
 blaupause_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
+
+blaupause.entry.table = Einträge
+blaupause.category.table = Kategorien
+
+# Tabellen: Einträge
+
+blaupause.category.name = Name
+blaupause.category.blaupause_entry_ids = Einträge
+blaupause.category.status = Status
+blaupause.category.createdate = Erstellt am
+blaupause.category.createuser = Erstellt von
+blaupause.category.updatedate = Aktualisiert am
+blaupause.category.updateuser = Aktualisiert von
+blaupause.category.uuid = UUID
+
+blaupause.entry.name = Name
+blaupause.entry.blaupause_category_id = Kategorie
+blaupause.entry.status = Status
+blaupause.entry.createdate = Erstellt am
+blaupause.entry.createuser = Erstellt von
+blaupause.entry.updatedate = Aktualisiert am
+blaupause.entry.updateuser = Aktualisiert von
+blaupause.entry.uuid = UUID

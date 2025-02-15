@@ -5,10 +5,16 @@ namespace Alexplusde\Blaupause;
 use rex_csrf_token;
 use rex_extension_point;
 use rex_url;
+use rex_yform_manager_collection;
 use rex_yform_manager_dataset;
 
 class Entry extends rex_yform_manager_dataset
 {
+
+    const STATUS_ACTIVE = 1;
+    const STATUS_DRAFT = 0;
+    const STATUS_INACTIVE = -1;
+
     // https://github.com/yakamara/redaxo_yform/blob/master/docs/04_yorm.md#yorm-mit-eigener-model-class-verwenden
     // Lasse dir die Klasse anhand deines Tablesets selbst bauen: https://github.com/alexplusde/ymca
     // Nachfolgend ein Beispiel, um eigene Methoden zu erstellen
@@ -53,4 +59,19 @@ class Entry extends rex_yform_manager_dataset
             },
         );
     }
+
+    public static function getStatusOptions(): array
+    {
+        return [
+            self::STATUS_ACTIVE => 'Aktiv',
+            self::STATUS_DRAFT => 'Entwurf',
+            self::STATUS_INACTIVE => 'Inaktiv',
+        ];
+    }
+
+    public static function findOnline(): rex_yform_manager_collection
+    {
+        return self::query()->where('status', self::STATUS_ACTIVE)->find();
+    }
+
 }

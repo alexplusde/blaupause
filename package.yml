@@ -31,13 +31,17 @@ pages:
 #        main: true                 
         block: system               # 'system', um ins Hauptmenü zu verschieben, oder 'blaupause', um eigenen blaupause-Abschnitt zu erstellen. Weglassen, um bei den Addons gelistet zu werden 
         prio: 15                    # Reihenfolge in Abhängigkeit anderer Addons
-        icon: rex-icon fa-calendar  # Icon neben dem Menüpunkt
+        icon: rex-icon fa-document  # Icon neben dem Menüpunkt
         perm: blaupause[]               # Berechtigung, die einer Rolle zugewiesen werden kann. z.B. `admin` für Admin, oder `blaupause['xyz']` für dein eigenes Addon
         subpages:                   # Automatisches Untermenü unterhalb des Reisters von `blaupausepage` erzeugen
-            table:
+            entry:
                 title: translate:blaupause_table
-                icon: rex-icon fa-gear
-                perm: blaupause[]
+                icon: rex-icon fa-document
+                perm: blaupause[entry]
+            category:
+                title: translate:blaupause_table
+                icon: rex-icon fa-folder
+                perm: blaupause[category]
             settings:
                 title: translate:blaupause_settings
                 icon: rex-icon fa-gear
