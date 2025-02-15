@@ -13,7 +13,6 @@ rex_sql_table::get(rex::getTable('blaupause_category'))
     ->ensureIndex(new rex_sql_index('uuid', ['uuid'], rex_sql_index::UNIQUE))
     ->ensure();
 
-
 rex_sql_table::get(rex::getTable('blaupause_entry'))
     ->ensurePrimaryIdColumn()
     ->ensureColumn(new rex_sql_column('name', 'varchar(191)', false, ''))
