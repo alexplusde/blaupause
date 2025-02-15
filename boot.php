@@ -91,3 +91,9 @@ if (rex::isBackend() && \rex_addon::get('blaupause') && \rex_addon::get('blaupau
     }
 }
 */
+
+/* Listendarstellung verändern 
+if (rex::isBackend()) {
+    rex_extension::register('YFORM_DATA_LIST', Blaupause::epYformDataList(...));
+}
+*/
