@@ -1,7 +1,7 @@
 # Suche mit regex nach ` *#.*$` und ersetze durch ``, um Kommentare zu entfernen
 
 package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
-version: '2.0.0-dev-2024-12-28' # Aktuelle Version. 
+version: '2.0.0-dev-2025-02-15' # Aktuelle Version. 
 author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
 supportpage: https://github.com/alexplusde/blaupause # Support-Seite, wird im Installer gezeigt
 # load: late 

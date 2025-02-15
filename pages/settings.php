@@ -1,9 +1,9 @@
 <?php
 
 use rex_config_form;
-use rex_view;
 use rex_fragment;
 use rex_i18n;
+use rex_view;
 
 echo rex_view::title(rex_i18n::msg('blaupause.title'));
 
