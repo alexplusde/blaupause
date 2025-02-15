@@ -20,11 +20,11 @@ use rex_yform_manager_table;
 /*
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
     rex_yform_manager_dataset::setModelClass(
-        'rex_blaupause',
+        rex::getTable('blaupause_entry'),
         Entry::class
     );
     rex_yform_manager_dataset::setModelClass(
-        'rex_blaupause_category',
+        rex::getTable('blaupause_category'),
         Category::class
     );
 }
