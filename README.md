@@ -60,6 +60,35 @@ Passe diese README.md-Datei an und spiele sie als Hilfe-Seite zu deinem Addon au
 
 Beginne mit einem Konfigurations-Formular, das bereits best practice in REDAXO umsetzt - mit Links zu den wichtigsten API-Docs.
 
+## Add-ons, die auf `alexplusde\blaupause` basieren:
+
+* <https://github.com/alexplusde/akkreditieren>
+* <https://github.com/alexplusde/auto_delete>
+* <https://github.com/alexplusde/bs5_iconpicker>
+* <https://github.com/alexplusde/cache_warm_up>
+* <https://github.com/alexplusde/content>
+* <https://github.com/alexplusde/download_area>
+* <https://github.com/alexplusde/elect>
+* <https://github.com/alexplusde/inbox>
+* <https://github.com/alexplusde/indexnow>
+* <https://github.com/alexplusde/mailer_profile>
+* <https://github.com/alexplusde/mdocs>
+* <https://github.com/alexplusde/milestone>
+* <https://github.com/alexplusde/notification>
+* <https://github.com/alexplusde/product>
+* <https://github.com/alexplusde/schwooops>
+* <https://github.com/alexplusde/search_it_with_gpt>
+* <https://github.com/alexplusde/stellenangebote>
+* <https://github.com/alexplusde/thumb>
+* <https://github.com/alexplusde/tier>
+* <https://github.com/alexplusde/tracks>
+* <https://github.com/alexplusde/urlaub>
+* <https://github.com/alexplusde/wenns_sein_muss>
+* <https://github.com/alexplusde/ydeploy_export>
+* <https://github.com/alexplusde/ymca>
+* <https://github.com/FriendsOfREDAXO/neues_structure>
+* <https://github.com/FriendsOfREDAXO/wildcard>
+
 ## Lizenz
 
 MIT Lizenz, siehe [LICENSE.md](https://github.com/alexplusde/blaupause/blob/master/LICENSE.md)  
