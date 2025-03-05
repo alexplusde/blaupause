@@ -1,15 +1,15 @@
 # Suche mit regex nach ` *#.*$` und ersetze durch ``, um Kommentare zu entfernen
 
 package: blaupause # Addon-Key, ggf. wie er bei MyREDAXO hinterlegt ist.
-version: '2.1.0-dev-2025-02-15' # Aktuelle Version. 
+version: '2.1.0-dev-2025-03-05' # Aktuelle Version. 
 author: 'Alexander Walther' # Name(n) der Autoren, wird im Installer gezeigt
 supportpage: https://github.com/alexplusde/blaupause # Support-Seite, wird im Installer gezeigt
 # load: late 
 
 requires:                       # Abhängigkeiten definieren, z.B.
     php:
-        version: '>8.1,<9'
-    redaxo: ^5.16              # REDAXO Core-Version
+        version: '>8.2,<9'
+    redaxo: ^5.18              # REDAXO Core-Version
     packages:                  # Plugins und Addons
         yform: "^4"
 #       tracks: "^4"
